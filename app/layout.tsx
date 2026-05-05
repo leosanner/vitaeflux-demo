@@ -15,7 +15,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "VitaeFlux — Clínica de biofísica e terapias integrativas",
+  title: "Vitae Flux — Terapias biofísicas",
   description:
     "Olhamos além do sintoma. Terapias biofísicas e integrativas que apoiam o equilíbrio físico, emocional e funcional do organismo.",
 };
