@@ -1,0 +1,82 @@
+{
+  "secao": {
+    "conteudo": {
+      "hero": {
+        "titulo": "Na Bienestar olhamos além do sintoma",
+        "subtitulo": "Terapias biofísicas e tecnologias integrativas aplicadas à saúde, bem-estar e funcionalidade do organismo."
+      },
+      "biofisica": {
+        "titulo": "Biofísica aplicada à saúde",
+        "conteudo": "A biofísica da saúde investiga como diferentes fatores — como frequências, campos, ondas, eletromagnetismo e biofotônica — influenciam a comunicação e regulação dos sistemas biológicos. As terapias biofísicas utilizam estímulos naturais e controlados para apoiar os mecanismos de autorregulação, equilíbrio e recuperação do organismo."
+      },
+      "contribuicoes": {
+        "titulo": "Como essa abordagem pode contribuir",
+        "itens": [
+          "Apoio à microcirculação",
+          "Regulação do estresse fisiológico",
+          "Suporte à recuperação funcional",
+          "Otimização da vitalidade celular",
+          "Equilíbrio dos sistemas"
+        ]
+      },
+      "abordagem_integrativa": {
+        "titulo": "Uma abordagem verdadeiramente integrativa",
+        "conteudo": "Na Bienestar, integramos tecnologias biofísicas modernas com princípios integrativos e avaliação personalizada. Cada atendimento considera o indivíduo de forma ampla — corpo, mente, sono, rotina e seus desafios específicos."
+      },
+      "analises": {
+        "titulo": "Análises que orientam seu cuidado",
+        "subtitulo": "Antes de definir qualquer protocolo, buscamos compreender os padrões e necessidades individuais do seu organismo.",
+        "descricao": "Acreditamos que tratamentos eficazes começam com uma avaliação cuidadosa. Nossas análises auxiliam na identificação de desequilíbrios funcionais, padrões de estresse fisiológico e possíveis interferências no equilíbrio físico e emocional.",
+        "cards": [
+          {
+            "titulo": "Análise de Biorressonância Completa",
+            "conteudo": "Avaliação por biofeedback e sistemas de análise funcional."
+          },
+          {
+            "titulo": "Análise de Alergeno Alimentares",
+            "conteudo": "Investigação de possíveis sensibilidades alimentares e reações individuais."
+          },
+          {
+            "titulo": "Análise de Fatores Relacionados ao TEA",
+            "conteudo": "Avaliação funcional auxiliar de fatores associados ao espectro autista."
+          },
+          {
+            "titulo": "Microscopia de Campo Escuro",
+            "conteudo": "Avaliação complementar para observação de aspectos sanguíneos."
+          }
+        ],
+        "botao": "Agendar Análise"
+      },
+      "terapias_tecnologias": {
+        "titulo": "Terapias e tecnologias utilizadas",
+        "itens": [
+          "Biorressonância",
+          "Bemer",
+          "Biofoton",
+          "ILIB",
+          "Hidrogênio Molecular",
+          "CET",
+          "Terapias manuais",
+          "Terapias energéticas"
+        ]
+      },
+      "contato": {
+        "titulo": "ENTRE EM CONTATO",
+        "conteudo": "Estamos localizados em Santo André, São Paulo. Se você busca um atendimento integrativo, entre em contato e agende sua avaliação.",
+        "endereco": "Rua Marina, Santo André - São Paulo",
+        "telefone": "(11) 94772-2360",
+        "email": "bienestar.saude@gmail.com",
+        "formulario": {
+          "campos": ["Nome", "E-mail", "Telefone", "Mensagem"],
+          "botao": "Enviar"
+        }
+      },
+      "mapa": {
+        "local": "Bienestar - Clínica de Saúde Biofísica"
+      },
+      "rodape": {
+        "texto": "Termos e Condições | Política de Privacidade | Todos os direitos reservados"
+      }
+    }
+  }
+}
