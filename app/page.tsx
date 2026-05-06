@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-1 flex-col">
       <header className="w-full border-b border-line/60">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-8 md:px-10 md:py-10">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 pt-3 pb-6 md:px-10 md:pt-4 md:pb-8">
           <a
             href="/"
             aria-label="Vitae Flux — Terapias biofísicas"
