@@ -4,34 +4,27 @@ export default function Home() {
   return (
     <div className="flex flex-1 flex-col">
       <header className="w-full border-b border-line/60">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-5 md:px-10">
-          <a href="/" aria-label="Vitae Flux — início" className="flex items-center gap-3">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-8 md:px-10 md:py-10">
+          <a
+            href="/"
+            aria-label="Vitae Flux — Terapias biofísicas"
+            className="group inline-flex"
+          >
             <Image
-              src="/vitae-flux-logo.png"
-              alt=""
-              width={64}
-              height={64}
+              src="/vitae-flux-lockup.png"
+              alt="Vitae Flux — Terapias biofísicas"
+              width={800}
+              height={344}
               priority
-              className="h-10 w-auto object-contain"
+              className="h-20 w-auto object-contain transition-transform duration-700 ease-out group-hover:scale-[1.02] md:h-24 lg:h-28"
             />
-            <span className="font-serif text-xl tracking-tight text-ink">
-              Vitae Flux
-            </span>
           </a>
 
-          <nav className="hidden items-center gap-8 text-sm text-muted md:flex">
-            <a href="#abordagem" className="hover:text-ink transition-colors">
-              Abordagem
-            </a>
-            <a href="#analises" className="hover:text-ink transition-colors">
-              Análises
-            </a>
-            <a href="#terapias" className="hover:text-ink transition-colors">
-              Terapias
-            </a>
-            <a href="#contato" className="hover:text-ink transition-colors">
-              Contato
-            </a>
+          <nav className="hidden items-center gap-10 text-sm text-muted md:flex">
+            <NavLink href="#abordagem">Abordagem</NavLink>
+            <NavLink href="#analises">Análises</NavLink>
+            <NavLink href="#terapias">Terapias</NavLink>
+            <NavLink href="#contato">Contato</NavLink>
           </nav>
 
         </div>
@@ -83,6 +76,27 @@ export default function Home() {
         <Contato />
       </main>
     </div>
+  );
+}
+
+function NavLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      className="group relative inline-flex py-1 tracking-wide text-muted transition-colors duration-200 hover:text-ink"
+    >
+      {children}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-accent transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] group-hover:scale-x-100"
+      />
+    </a>
   );
 }
 
