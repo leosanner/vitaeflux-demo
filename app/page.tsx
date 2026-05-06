@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-const WHATSAPP_URL = "https://wa.me/0000000000"; // placeholder
-
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col">
@@ -36,14 +34,6 @@ export default function Home() {
             </a>
           </nav>
 
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-canvas-elevated transition-colors hover:bg-accent-hover md:inline-flex"
-          >
-            Agendar consulta
-          </a>
         </div>
       </header>
 
@@ -70,14 +60,6 @@ export default function Home() {
 
               <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5">
                 <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-accent px-7 text-sm font-medium text-canvas-elevated transition-colors hover:bg-accent-hover"
-                >
-                  Agendar consulta
-                </a>
-                <a
                   href="#abordagem"
                   className="inline-flex h-12 items-center justify-center px-2 text-sm font-medium text-ink underline decoration-accent/40 underline-offset-[6px] transition-colors hover:decoration-accent"
                 >
@@ -98,8 +80,71 @@ export default function Home() {
         </section>
 
         <Abordagem />
+        <Contato />
       </main>
     </div>
+  );
+}
+
+function Contato() {
+  return (
+    <section id="contato" className="border-t border-line/60">
+      <div className="mx-auto w-full max-w-6xl px-6 py-24 md:px-10 md:py-32">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
+          <div className="md:col-span-5">
+            <p className="mb-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted">
+              <span className="h-px w-8 bg-accent" />
+              Contato
+            </p>
+            <h2 className="font-serif text-4xl leading-[1.1] tracking-tight text-ink md:text-5xl">
+              Venha nos
+              <br />
+              <em className="italic text-accent">conhecer.</em>
+            </h2>
+          </div>
+
+          <div className="md:col-span-7 md:pt-4">
+            <dl className="space-y-10">
+              <div>
+                <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted">
+                  <InstagramIcon />
+                  Instagram
+                </dt>
+                <dd className="mt-3 text-lg text-ink">
+                  <a
+                    href="https://instagram.com/vitaeflux"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-accent/40 underline-offset-[6px] transition-colors hover:decoration-accent"
+                  >
+                    @vitaeflux
+                  </a>
+                </dd>
+              </div>
+
+              <div>
+                <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted">
+                  <MapPinIcon />
+                  Endereço
+                </dt>
+                <dd className="mt-3 text-lg leading-relaxed text-ink">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Avenida+Andr%C3%B4meda+885+Conjunto+904+A+Alphaville+Barueri+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-accent/40 underline-offset-[6px] transition-colors hover:decoration-accent"
+                  >
+                    Avenida Andrômeda, 885 — Conjunto 904 A
+                    <br />
+                    Alphaville, Barueri — SP
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -165,6 +210,43 @@ function Abordagem() {
         </div>
       </div>
     </section>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5 text-accent"
+    >
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function MapPinIcon() {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-4 w-4 text-accent"
+    >
+      <path d="M12 21s-7-6.5-7-12a7 7 0 1 1 14 0c0 5.5-7 12-7 12z" />
+      <circle cx="12" cy="9" r="2.5" />
+    </svg>
   );
 }
 
