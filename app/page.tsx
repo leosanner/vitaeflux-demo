@@ -121,6 +121,23 @@ function Contato() {
             <dl className="space-y-10">
               <div>
                 <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted">
+                  <WhatsAppIcon />
+                  WhatsApp
+                </dt>
+                <dd className="mt-3 text-lg text-ink">
+                  <a
+                    href="https://wa.me/5511933834334"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-accent/40 underline-offset-[6px] transition-colors hover:decoration-accent"
+                  >
+                    (11) 93383-4334
+                  </a>
+                </dd>
+              </div>
+
+              <div>
+                <dt className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted">
                   <InstagramIcon />
                   Instagram
                 </dt>
@@ -224,6 +241,24 @@ function Abordagem() {
         </div>
       </div>
     </section>
+  );
+}
+
+function WhatsAppIcon() {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5 text-accent"
+    >
+      <path d="M20.5 12a8.5 8.5 0 0 1-12.7 7.4L3.5 20.5l1.2-4.2A8.5 8.5 0 1 1 20.5 12z" />
+      <path d="M8.6 8.8c.2-.5.5-.5.8-.5h.6c.2 0 .5 0 .7.5l.9 2.1c.1.3 0 .5-.1.7l-.4.5c-.2.2-.3.4-.1.7a6 6 0 0 0 2.7 2.7c.3.2.5.1.7-.1l.5-.4c.2-.1.4-.2.7-.1l2.1.9c.5.2.5.5.5.7v.6c0 .3 0 .6-.5.8a3 3 0 0 1-2 .3c-1.6-.3-3.5-1.3-5.1-2.9s-2.6-3.5-2.9-5.1a3 3 0 0 1 .3-2z" />
+    </svg>
   );
 }
 
